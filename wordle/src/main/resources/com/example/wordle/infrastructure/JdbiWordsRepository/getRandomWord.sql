@@ -1,0 +1,1 @@
+select top 1 percent word from Words order by newid()

@@ -1,0 +1,27 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
+
+<div class="modal-header">
+    <h4 class="modal-title" id="modalLabel"> User Statistics </h4>
+    <button type="button" class="close" aria-label="Fechar"
+        (click)="activeModal.dismiss()">
+        <span aria-hidden="true">&times;</span>    
+    </button>
+</div>
+
+<div class="modal-body">
+    <div>
+        <p>Total Games: {{userInfo.totalGames}}</p>
+        <p>Total Wins: {{userInfo.totalWins}}</p>
+        <p>Win rate: {{userInfo.percentWin}}%</p>
+    </div>
+
+    <div id="divChart">
+        <canvas id="myChart"></canvas>
+    </div>
+
+</div>
+
+<div class="modal-footer">
+    <button type="button" class="btn btn-outline-dark"
+    (click)="activeModal.close()">Fechar</button>
+</div>

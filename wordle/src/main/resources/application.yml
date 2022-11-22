@@ -1,0 +1,11 @@
+spring:
+  profiles:
+    active: local
+  datasource:
+    url: jdbc:sqlserver://localhost:51704;databaseName=Wordle;trustServerCertificate=true
+    username: sa
+    password: 1234qwer%@
+    driverClassName: com.microsoft.sqlserver.jdbc.SQLServerDriver
+  mvc:
+    pathmatch:
+      matching-strategy: ant_path_matcher
